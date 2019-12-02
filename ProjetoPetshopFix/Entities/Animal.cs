@@ -9,7 +9,9 @@ namespace ProjetoPetshopFix.Entities
     class Animal
     {
         public int CodAnimal { get; set; }
+
         public int Cliente_CodCliente { get; set; }
+        public Cliente Cliente { get; private set; }
         public string Nome { get; set; }
         public int AnoNascimento { get; set; }
         public float Peso { get; set; }
@@ -21,6 +23,22 @@ namespace ProjetoPetshopFix.Entities
 
         public Animal()
         {
+        }
+
+        public Animal(int codAnimal, int cliente_CodCliente, Cliente cliente, string nome, int anoNascimento, 
+            float peso, string grupo, string raca, string genero, bool vacinacao, string comportamento)
+        {
+            CodAnimal = codAnimal;
+            Cliente_CodCliente = cliente_CodCliente;
+            Cliente = cliente;
+            Nome = nome;
+            AnoNascimento = anoNascimento;
+            Peso = peso;
+            Grupo = grupo;
+            Raca = raca;
+            Genero = genero;
+            Vacinacao = vacinacao;
+            Comportamento = comportamento;
         }
     }
 }

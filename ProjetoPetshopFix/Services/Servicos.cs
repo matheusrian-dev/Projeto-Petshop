@@ -12,5 +12,13 @@ namespace ProjetoPetshopFix.Services
         public Servicos()
         {
         }
+
+        public Servicos(int codServico, string nome, string descricao, double valor)
+        {
+            CodServico = codServico;
+            Nome = nome;
+            Descricao = descricao;
+            Valor = valor;
+        }
     }
 }
