@@ -18,7 +18,7 @@ namespace ProjetoPetshopFix.Entities
         public string Estado { get; set; }
         public string Pais { get; set; }
 
-        DataBaseConnection con = new DataBaseConnection();
+        readonly DataBaseConnection con = new DataBaseConnection();
 
         public Cliente()
         {
@@ -127,6 +127,9 @@ namespace ProjetoPetshopFix.Entities
                     Pais);
 
                 con.ExecutarComandosSql(query);
+
+                MessageBox.Show("Cliente cadastrado com sucesso!");
+
                 return true;
             }
             catch (Exception e)
@@ -155,6 +158,9 @@ namespace ProjetoPetshopFix.Entities
                     codInserido);
 
                 con.ExecutarComandosSql(query);
+
+                MessageBox.Show("Cliente removido com sucesso!");
+
                 return true;
             }
             catch (Exception e)
@@ -196,6 +202,9 @@ namespace ProjetoPetshopFix.Entities
                     CodCliente);
 
                 con.ExecutarComandosSql(query);
+
+                MessageBox.Show("Dados do cliente atualizados com sucesso!");
+
                 return true;
             }
             catch (Exception e)

@@ -23,7 +23,7 @@ namespace ProjetoPetshopFix.Entities
         public string Pais { get; set; }
         public TipoFuncionario TipoFuncionario { get; protected set; }
 
-        DataBaseConnection con = new DataBaseConnection();
+        readonly DataBaseConnection con = new DataBaseConnection();
 
         public Funcionario()
         {
@@ -86,8 +86,6 @@ namespace ProjetoPetshopFix.Entities
             return dt;
         }
 
-
-
         public bool Inserir()
         {
             if (ValidarCadastro(Rg, Email))
@@ -116,11 +114,14 @@ namespace ProjetoPetshopFix.Entities
                     (int) TipoFuncionario);
 
                 con.ExecutarComandosSql(query);
+
+                MessageBox.Show("Funcionário cadastrado com sucesso!");
+
                 return true;
             }
             catch (Exception e)
             {
-                MessageBox.Show("Não foi possível inserir os dados do Funcionario! \n Resumo do Erro:" + 
+                MessageBox.Show("Não foi possível inserir os dados do Funcionário! \n Resumo do Erro:" + 
                     e.Message);
                 return false;
             }
@@ -168,11 +169,14 @@ namespace ProjetoPetshopFix.Entities
                     codInserido);
 
                 con.ExecutarComandosSql(query);
+
+                MessageBox.Show("Funcionário removido com sucesso!");
+
                 return true;
             }
             catch (Exception e)
             {
-                MessageBox.Show("Não foi possível excluir os dados do Funcionario! \n Resumo do Erro:" +
+                MessageBox.Show("Não foi possível excluir os dados do Funcionário! \n Resumo do Erro:" +
                     e.Message);
                 return false;
             }
@@ -211,6 +215,9 @@ namespace ProjetoPetshopFix.Entities
                     CodFuncionario);
 
                 con.ExecutarComandosSql(query);
+
+                MessageBox.Show("Dados do funcionário atualizados com sucesso!");
+
                 return true;
             }
             catch (Exception e)

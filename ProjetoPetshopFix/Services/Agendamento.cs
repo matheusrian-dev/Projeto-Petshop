@@ -32,5 +32,20 @@ namespace ProjetoPetshopFix.Services
             HoraPrevista = horaPrevista;
             Observacoes = observacoes;
         }
+
+        public Agendamento(int animal_CodAnimal, Animal animal, int servicos_CodServico, int codVeterinario, Funcionario funcionario, 
+            DateTime dataPrevista, DateTime horaPrevista, string observacoes)
+        {
+            Animal_CodAnimal = animal_CodAnimal;
+            Animal = animal;
+            Servicos_CodServico = servicos_CodServico;
+            CodVeterinario = codVeterinario;
+            Funcionario = funcionario;
+            DataPrevista = dataPrevista;
+            HoraPrevista = horaPrevista;
+            Observacoes = observacoes;
+        }
+
+
     }
 }
