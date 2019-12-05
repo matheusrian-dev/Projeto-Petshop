@@ -135,7 +135,7 @@ namespace ProjetoPetshopFix.Services
             try
             {
                 con.Conectar();
-                string query = String.Format("UPDATE servico SET nome = '{0}', descricao = '{1}', valor = {2}," +
+                string query = String.Format("UPDATE servico SET nome = '{0}', descricao = '{1}', valor = {2} " +
                     "WHERE codServico = {3}",
                     Nome,
                     Descricao,
