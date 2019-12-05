@@ -40,5 +40,11 @@ namespace ProjetoPetshopFix
         {
             //new Funcionario().Excluir(2);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Funcionario funcionario = new Funcionario(1, DateTime.Now, Convert.ToDateTime("1998-09-08"), "Matheus", "MG18100892", "(31) 99916-0683", "matheusrian332@gmail.com", "1234", "Rua Dr Beatris", "BH", "MG", "Brasil", TipoFuncionario.Veterinario);
+            funcionario.Editar();
+        }
     }
 }

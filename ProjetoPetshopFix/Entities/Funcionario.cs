@@ -86,12 +86,17 @@ namespace ProjetoPetshopFix.Entities
             return dt;
         }
 
-        public void Inserir()
+
+
+        public bool Inserir()
         {
+            if (ValidarCadastro(Rg, Email))
+            {
+                MessageBox.Show("Informações pessoais únicas já cadastradas (RG e Email)");
+                return false;
+            }
             try
             {
-                
-                
                 con.Conectar();
                 string query = String.Format("INSERT INTO funcionario(dataCadastro, dataNascimento, nomeFuncionario, rgFuncionario, telefoneFuncionario, " +
                     "emailFuncionario, senhaFuncionario, enderecoFuncionario, cidadeFuncionario, estadoFuncionario, paisFuncionario, tipoFuncionario) " +
@@ -99,13 +104,25 @@ namespace ProjetoPetshopFix.Entities
                     "'{8}', '{9}', '{10}', {11})",
                     Convert.ToDateTime(DataCadastro).ToString("yyyy-MM-dd"),
                     Convert.ToDateTime(DataNascimento).ToString("yyyy-MM-dd"),
-                    Nome, Rg, Telefone, Email, Senha, Endereco, Cidade, Estado, Pais, (int) TipoFuncionario);
+                    Nome, 
+                    Rg, 
+                    Telefone, 
+                    Email, 
+                    Senha, 
+                    Endereco, 
+                    Cidade, 
+                    Estado, 
+                    Pais, 
+                    (int) TipoFuncionario);
 
                 con.ExecutarComandosSql(query);
+                return true;
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message);
+                MessageBox.Show("Não foi possível inserir os dados do Funcionario! \n Resumo do Erro:" + 
+                    e.Message);
+                return false;
             }
             finally
             {
@@ -113,21 +130,94 @@ namespace ProjetoPetshopFix.Entities
             }
         }
 
-        public void Excluir(int codInserido)
+        public bool ValidarCadastro(string rgInserido, string emailInserido)
         {
+            con.Conectar();
+            string query = "SELECT * FROM funcionario WHERE rgFuncionario = " + rgInserido + " OR emailFuncionario = "+ emailInserido;
+            DataTable dt = con.RetDataTable(query);
+            if(dt == null)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public bool BuscarCod(int codInserido)
+        {
+            con.Conectar();
+            string query = "SELECT * FROM funcionario WHERE codInserido = " + codInserido;
+            DataTable dt = con.RetDataTable(query);
+            if (dt == null)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public bool Excluir(int codInserido)
+        {
+            if (!BuscarCod(codInserido))
+            {
+                MessageBox.Show("Funcionário não encontrado!");
+                return false;
+            }
             try
             {
-
-
                 con.Conectar();
                 string query = String.Format("DELETE FROM funcionario WHERE codFuncionario = {0}",
                     codInserido);
 
                 con.ExecutarComandosSql(query);
+                return true;
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message);
+                MessageBox.Show("Não foi possível excluir os dados do Funcionario! \n Resumo do Erro:" +
+                    e.Message);
+                return false;
+            }
+            finally
+            {
+                con.Desconectar();
+            }
+        }
+
+        public bool Editar()
+        {
+            if (!BuscarCod(CodFuncionario))
+            {
+                MessageBox.Show("Funcionário não encontrado!");
+                return false;
+            }
+            try
+            {
+                con.Conectar();
+                string query = String.Format("UPDATE funcionario SET dataCadastro = '{0}', dataNascimento = '{1}', nomeFuncionario = '{2}', " + 
+                    "rgFuncionario = '{3}', telefoneFuncionario = '{4}', emailFuncionario = '{5}', senhaFuncionario = '{6}', enderecoFuncionario = '{7}'," + 
+                    " cidadeFuncionario = '{8}', estadoFuncionario = '{9}', paisFuncionario = '{10}', tipoFuncionario = {11} " +
+                    "WHERE codFuncionario = {12}",
+                    Convert.ToDateTime(DataCadastro).ToString("yyyy-MM-dd"),
+                    Convert.ToDateTime(DataNascimento).ToString("yyyy-MM-dd"),
+                    Nome, 
+                    Rg, 
+                    Telefone, 
+                    Email, 
+                    Senha, 
+                    Endereco, 
+                    Cidade, 
+                    Estado, 
+                    Pais, 
+                    (int) TipoFuncionario, 
+                    CodFuncionario);
+
+                con.ExecutarComandosSql(query);
+                return true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Não foi possível modificar os dados do Funcionario! \n Resumo do Erro:" +
+                    e.Message);
+                return false;
             }
             finally
             {
