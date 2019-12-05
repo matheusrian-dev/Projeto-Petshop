@@ -86,6 +86,27 @@ namespace ProjetoPetshopFix.Entities
             return dt;
         }
 
+        public DataTable RetFuncionarioEspecifico(string nome, string rg, string email)
+        {
+            DataTable dt = null;
+            try
+            {
+                con.Conectar();
+                string query = "SELECT * FROM funcionario WHERE nomeFuncionario = '" + nome + "' OR rgFuncionario = '" + rg + "' OR emailFuncionario = '" + email + "'";
+                dt = con.RetDataTable(query);
+
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                con.Desconectar();
+            }
+            return dt;
+        }
+
         public bool Inserir()
         {
             if (ValidarCadastro(Rg, Email))

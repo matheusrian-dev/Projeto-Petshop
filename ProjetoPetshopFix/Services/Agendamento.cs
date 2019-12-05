@@ -72,6 +72,30 @@ namespace ProjetoPetshopFix.Services
             return dt;
         }
 
+        public DataTable RetAgendamentoEspecifico(string nomeVeterinario, string nomeAnimal)
+        {
+            DataTable dt = null;
+            try
+            {
+                con.Conectar();
+                string query = "SELECT Ag.* FROM funcionario AS F INNER JOIN agendamento AS Ag ON" +
+                    " (F.codFuncionario = Ag.codVeterinario) INNER JOIN animal AS A ON" +
+                    "(Ag.animal_codAnimalExec = A.codAnimal)" +
+                    " WHERE F.nomeFuncionario = '" + nomeVeterinario + "' OR A.nomeAnimal = '" + nomeAnimal + "'";
+                dt = con.RetDataTable(query);
+
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                con.Desconectar();
+            }
+            return dt;
+        }
+
         public bool BuscarCod(int codInserido)
         {
             con.Conectar();

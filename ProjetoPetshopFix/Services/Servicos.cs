@@ -53,6 +53,27 @@ namespace ProjetoPetshopFix.Services
             return dt;
         }
 
+        public DataTable RetServicoEspecifico(string nome, string descricao)
+        {
+            DataTable dt = null;
+            try
+            {
+                con.Conectar();
+                string query = "SELECT * FROM servico WHERE nome = '" + nome + "' OR descricao = '%" + descricao + "%'";
+                dt = con.RetDataTable(query);
+
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                con.Desconectar();
+            }
+            return dt;
+        }
+
         public bool BuscarCod(int codInserido)
         {
             con.Conectar();

@@ -11,7 +11,6 @@ namespace ProjetoPetshopFix.Entities
     class Animal
     {
         public int CodAnimal { get; set; }
-
         public int Cliente_CodCliente { get; set; }
         public Cliente Cliente { get; private set; }
         public string Nome { get; set; }
@@ -24,7 +23,7 @@ namespace ProjetoPetshopFix.Entities
         public string Comportamento { get; set; }
 
         readonly DataBaseConnection con = new DataBaseConnection();
-
+        
         public Animal()
         {
         }
@@ -67,6 +66,28 @@ namespace ProjetoPetshopFix.Entities
             {
                 con.Conectar();
                 string query = "SELECT * FROM animal";
+                dt = con.RetDataTable(query);
+
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                con.Desconectar();
+            }
+            return dt;
+        }
+
+        public DataTable RetAnimalEspecifico(string nomeAnimal, string nomeDono)
+        {
+            DataTable dt = null;
+            try
+            {
+                con.Conectar();
+                string query = "SELECT A.* FROM animal as A INNER JOIN cliente AS C ON" +
+                    "(A.Cliente_codCliente = C.codCliente) WHERE C.nome = '" + nomeDono + "' OR A.nome LIKE '" + nomeAnimal + "'";
                 dt = con.RetDataTable(query);
 
             }
