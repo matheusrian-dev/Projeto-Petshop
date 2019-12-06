@@ -60,10 +60,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBaseConnection.cs" />
+    <Compile Include="EditarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarFuncionario.Designer.cs">
+      <DependentUpon>EditarFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Animal.cs" />
     <Compile Include="Entities\Cliente.cs" />
     <Compile Include="Entities\Enum\TipoFuncionario.cs" />
     <Compile Include="Entities\Funcionario.cs" />
+    <Compile Include="ExcluirFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcluirFuncionario.Designer.cs">
+      <DependentUpon>ExcluirFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +111,12 @@
     <Compile Include="Services\Agendamento.cs" />
     <Compile Include="Services\Execucao.cs" />
     <Compile Include="Services\Servicos.cs" />
+    <EmbeddedResource Include="EditarFuncionario.resx">
+      <DependentUpon>EditarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcluirFuncionario.resx">
+      <DependentUpon>ExcluirFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InserirFuncionário.resx">
       <DependentUpon>InserirFuncionário.cs</DependentUpon>
     </EmbeddedResource>
