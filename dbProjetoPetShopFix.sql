@@ -34,9 +34,9 @@ CREATE TABLE `agendamento` (
   KEY `funcionario_codFuncionarioAg_idx` (`codVeterinario`),
   KEY `animal_codAnimal_idx` (`animal_codAnimal`),
   KEY `servico_codServico_idx` (`servico_codServico`),
-  CONSTRAINT `animal_codAnimal` FOREIGN KEY (`animal_codAnimal`) REFERENCES `animal` (`codAnimal`),
-  CONSTRAINT `funcionario_codFuncionarioAg` FOREIGN KEY (`codVeterinario`) REFERENCES `funcionario` (`codFuncionario`),
-  CONSTRAINT `servico_codServico` FOREIGN KEY (`servico_codServico`) REFERENCES `servico` (`codServico`)
+  CONSTRAINT `animal_codAnimal` FOREIGN KEY (`animal_codAnimal`) REFERENCES `animal` (`codAnimal`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `funcionario_codFuncionarioAg` FOREIGN KEY (`codVeterinario`) REFERENCES `funcionario` (`codFuncionario`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `servico_codServico` FOREIGN KEY (`servico_codServico`) REFERENCES `servico` (`codServico`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -60,7 +60,7 @@ CREATE TABLE `animal` (
   `cliente_codCliente` int(11) DEFAULT NULL,
   PRIMARY KEY (`codAnimal`),
   KEY `cliente_codCliente_idx` (`cliente_codCliente`),
-  CONSTRAINT `cliente_codCliente` FOREIGN KEY (`cliente_codCliente`) REFERENCES `cliente` (`codCliente`)
+  CONSTRAINT `cliente_codCliente` FOREIGN KEY (`cliente_codCliente`) REFERENCES `cliente` (`codCliente`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -106,9 +106,9 @@ CREATE TABLE `execucao` (
   KEY `animal_codAnimalExec_idx` (`animal_codAnimalExec`),
   KEY `servico_codServico_idx` (`servico_codServicoExec`),
   KEY `cod_FuncionarioExec_idx` (`codVeterinarioResp`),
-  CONSTRAINT `animal_codAnimalExec` FOREIGN KEY (`animal_codAnimalExec`) REFERENCES `animal` (`codAnimal`),
-  CONSTRAINT `cod_FuncionarioExec` FOREIGN KEY (`codVeterinarioResp`) REFERENCES `funcionario` (`codFuncionario`),
-  CONSTRAINT `servico_codServicoExec` FOREIGN KEY (`servico_codServicoExec`) REFERENCES `servico` (`codServico`)
+  CONSTRAINT `animal_codAnimalExec` FOREIGN KEY (`animal_codAnimalExec`) REFERENCES `animal` (`codAnimal`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `cod_FuncionarioExec` FOREIGN KEY (`codVeterinarioResp`) REFERENCES `funcionario` (`codFuncionario`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `servico_codServicoExec` FOREIGN KEY (`servico_codServicoExec`) REFERENCES `servico` (`codServico`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -162,4 +162,4 @@ CREATE TABLE `servico` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-12-04 16:23:57
+-- Dump completed on 2019-12-06 13:55:17
