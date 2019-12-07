@@ -21,5 +21,15 @@ namespace ProjetoPetshopFix
         {
 
         }
+
+        private void btnShowGerenciar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlChoose_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

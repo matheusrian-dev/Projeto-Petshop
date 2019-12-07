@@ -64,12 +64,6 @@
     <Compile Include="Entities\Cliente.cs" />
     <Compile Include="Entities\Enum\TipoFuncionario.cs" />
     <Compile Include="Entities\Funcionario.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="InserirFuncionário.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -30,16 +30,21 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InserirFuncionário));
             this.pnlTitulo = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtSenhaFuncionario = new System.Windows.Forms.TextBox();
+            this.lblDataCadastro = new System.Windows.Forms.Label();
+            this.txtEmailFuncionario = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.txtNomeFuncionario = new System.Windows.Forms.TextBox();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.lblRG = new System.Windows.Forms.Label();
             this.mskTelefoneFuncionario = new System.Windows.Forms.MaskedTextBox();
             this.mskRGFuncionario = new System.Windows.Forms.MaskedTextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.dtpDataNascimentoFuncionario = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.cboEstadoFuncionario = new System.Windows.Forms.ComboBox();
             this.cboCodTipoFuncionario = new System.Windows.Forms.ComboBox();
             this.lblDataNasc = new System.Windows.Forms.Label();
@@ -54,14 +59,6 @@
             this.lblEndereco = new System.Windows.Forms.Label();
             this.lblCidade = new System.Windows.Forms.Label();
             this.lblBairro = new System.Windows.Forms.Label();
-            this.lblRG = new System.Windows.Forms.Label();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.txtNomeFuncionario = new System.Windows.Forms.TextBox();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.txtEmailFuncionario = new System.Windows.Forms.TextBox();
-            this.lblDataCadastro = new System.Windows.Forms.Label();
-            this.txtSenhaFuncionario = new System.Windows.Forms.TextBox();
-            this.dtpDataCadastro = new System.Windows.Forms.DateTimePicker();
             this.BtnShowExcluir = new System.Windows.Forms.Button();
             this.btnShowAtualizar = new System.Windows.Forms.Button();
             this.btnInserirFuncionario = new System.Windows.Forms.Button();
@@ -69,38 +66,26 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlTitulo
             // 
             this.pnlTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.pnlTitulo.Controls.Add(this.pictureBox5);
-            this.pnlTitulo.Controls.Add(this.pictureBox4);
             this.pnlTitulo.Controls.Add(this.label1);
             this.pnlTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitulo.Location = new System.Drawing.Point(0, 0);
             this.pnlTitulo.Name = "pnlTitulo";
-            this.pnlTitulo.Size = new System.Drawing.Size(785, 53);
+            this.pnlTitulo.Size = new System.Drawing.Size(725, 53);
             this.pnlTitulo.TabIndex = 2;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(12, 5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(587, 33);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "Gerenciamento de Dados dos Funcionários";
             // 
             // pictureBox5
             // 
+            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox5.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.ErrorImage")));
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.InitialImage")));
-            this.pictureBox5.Location = new System.Drawing.Point(698, 5);
+            this.pictureBox5.Location = new System.Drawing.Point(674, 3);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(39, 42);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -109,29 +94,40 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox4.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.ErrorImage")));
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.InitialImage")));
-            this.pictureBox4.Location = new System.Drawing.Point(743, 3);
+            this.pictureBox4.Location = new System.Drawing.Point(664, 457);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(39, 42);
+            this.pictureBox4.Size = new System.Drawing.Size(49, 51);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 31;
             this.pictureBox4.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label1.Location = new System.Drawing.Point(87, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(536, 31);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Gerenciamento de Dados dos Funcionários";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(14, 67);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(545, 22);
+            this.label2.Size = new System.Drawing.Size(496, 24);
             this.label2.TabIndex = 60;
             this.label2.Text = "Insira as Informações do funcionário que deseja cadastrar:";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dtpDataCadastro);
             this.groupBox1.Controls.Add(this.txtSenhaFuncionario);
             this.groupBox1.Controls.Add(this.lblDataCadastro);
             this.groupBox1.Controls.Add(this.txtEmailFuncionario);
@@ -141,9 +137,7 @@
             this.groupBox1.Controls.Add(this.lblRG);
             this.groupBox1.Controls.Add(this.mskTelefoneFuncionario);
             this.groupBox1.Controls.Add(this.mskRGFuncionario);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.dtpDataNascimentoFuncionario);
-            this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.cboEstadoFuncionario);
             this.groupBox1.Controls.Add(this.cboCodTipoFuncionario);
             this.groupBox1.Controls.Add(this.lblDataNasc);
@@ -158,19 +152,81 @@
             this.groupBox1.Controls.Add(this.lblEndereco);
             this.groupBox1.Controls.Add(this.lblCidade);
             this.groupBox1.Controls.Add(this.lblBairro);
-            this.groupBox1.Location = new System.Drawing.Point(114, 116);
+            this.groupBox1.Location = new System.Drawing.Point(46, 111);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(623, 357);
+            this.groupBox1.Size = new System.Drawing.Size(601, 330);
             this.groupBox1.TabIndex = 66;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados do Funcionário";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // txtSenhaFuncionario
+            // 
+            this.txtSenhaFuncionario.Location = new System.Drawing.Point(26, 187);
+            this.txtSenhaFuncionario.Name = "txtSenhaFuncionario";
+            this.txtSenhaFuncionario.Size = new System.Drawing.Size(261, 20);
+            this.txtSenhaFuncionario.TabIndex = 88;
+            // 
+            // lblDataCadastro
+            // 
+            this.lblDataCadastro.AutoSize = true;
+            this.lblDataCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataCadastro.Location = new System.Drawing.Point(22, 165);
+            this.lblDataCadastro.Name = "lblDataCadastro";
+            this.lblDataCadastro.Size = new System.Drawing.Size(60, 20);
+            this.lblDataCadastro.TabIndex = 87;
+            this.lblDataCadastro.Text = "Senha:";
+            // 
+            // txtEmailFuncionario
+            // 
+            this.txtEmailFuncionario.Location = new System.Drawing.Point(26, 144);
+            this.txtEmailFuncionario.Name = "txtEmailFuncionario";
+            this.txtEmailFuncionario.Size = new System.Drawing.Size(261, 20);
+            this.txtEmailFuncionario.TabIndex = 86;
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Location = new System.Drawing.Point(22, 122);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(52, 20);
+            this.lblEmail.TabIndex = 85;
+            this.lblEmail.Text = "Email:";
+            // 
+            // txtNomeFuncionario
+            // 
+            this.txtNomeFuncionario.Location = new System.Drawing.Point(26, 58);
+            this.txtNomeFuncionario.Name = "txtNomeFuncionario";
+            this.txtNomeFuncionario.Size = new System.Drawing.Size(261, 20);
+            this.txtNomeFuncionario.TabIndex = 84;
+            // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(22, 36);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(55, 20);
+            this.lblNome.TabIndex = 83;
+            this.lblNome.Text = "Nome:";
+            // 
+            // lblRG
+            // 
+            this.lblRG.AutoSize = true;
+            this.lblRG.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRG.Location = new System.Drawing.Point(22, 77);
+            this.lblRG.Name = "lblRG";
+            this.lblRG.Size = new System.Drawing.Size(38, 20);
+            this.lblRG.TabIndex = 82;
+            this.lblRG.Text = "RG:";
             // 
             // mskTelefoneFuncionario
             // 
-            this.mskTelefoneFuncionario.Location = new System.Drawing.Point(26, 328);
+            this.mskTelefoneFuncionario.Location = new System.Drawing.Point(26, 282);
             this.mskTelefoneFuncionario.Mask = "(99) 99999-9999";
             this.mskTelefoneFuncionario.Name = "mskTelefoneFuncionario";
-            this.mskTelefoneFuncionario.Size = new System.Drawing.Size(125, 20);
+            this.mskTelefoneFuncionario.Size = new System.Drawing.Size(261, 20);
             this.mskTelefoneFuncionario.TabIndex = 81;
             // 
             // mskRGFuncionario
@@ -178,38 +234,19 @@
             this.mskRGFuncionario.Location = new System.Drawing.Point(26, 101);
             this.mskRGFuncionario.Mask = "Aa-99.999.999";
             this.mskRGFuncionario.Name = "mskRGFuncionario";
-            this.mskRGFuncionario.Size = new System.Drawing.Size(125, 20);
+            this.mskRGFuncionario.Size = new System.Drawing.Size(94, 20);
             this.mskRGFuncionario.TabIndex = 80;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(22, 210);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(211, 21);
-            this.label3.TabIndex = 64;
-            this.label3.Text = "Data do Cadastramento:";
             // 
             // dtpDataNascimentoFuncionario
             // 
             this.dtpDataNascimentoFuncionario.CustomFormat = "yyyy-MM-dd";
-            this.dtpDataNascimentoFuncionario.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDataNascimentoFuncionario.Location = new System.Drawing.Point(26, 281);
+            this.dtpDataNascimentoFuncionario.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataNascimentoFuncionario.Location = new System.Drawing.Point(26, 233);
             this.dtpDataNascimentoFuncionario.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dtpDataNascimentoFuncionario.Name = "dtpDataNascimentoFuncionario";
             this.dtpDataNascimentoFuncionario.Size = new System.Drawing.Size(125, 20);
             this.dtpDataNascimentoFuncionario.TabIndex = 66;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(448, 281);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(31, 27);
-            this.pictureBox2.TabIndex = 76;
-            this.pictureBox2.TabStop = false;
+            this.dtpDataNascimentoFuncionario.ValueChanged += new System.EventHandler(this.dtpDataNascimentoFuncionario_ValueChanged);
             // 
             // cboEstadoFuncionario
             // 
@@ -252,10 +289,6 @@
             // 
             this.cboCodTipoFuncionario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCodTipoFuncionario.FormattingEnabled = true;
-            this.cboCodTipoFuncionario.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3"});
             this.cboCodTipoFuncionario.Location = new System.Drawing.Point(316, 281);
             this.cboCodTipoFuncionario.Name = "cboCodTipoFuncionario";
             this.cboCodTipoFuncionario.Size = new System.Drawing.Size(126, 21);
@@ -264,20 +297,20 @@
             // lblDataNasc
             // 
             this.lblDataNasc.AutoSize = true;
-            this.lblDataNasc.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataNasc.Location = new System.Drawing.Point(22, 257);
+            this.lblDataNasc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataNasc.Location = new System.Drawing.Point(22, 210);
             this.lblDataNasc.Name = "lblDataNasc";
-            this.lblDataNasc.Size = new System.Drawing.Size(178, 21);
+            this.lblDataNasc.Size = new System.Drawing.Size(158, 20);
             this.lblDataNasc.TabIndex = 50;
             this.lblDataNasc.Text = "Data de Nascimento:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(22, 304);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(22, 257);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 21);
+            this.label4.Size = new System.Drawing.Size(75, 20);
             this.label4.TabIndex = 65;
             this.label4.Text = "Telefone:";
             // 
@@ -285,160 +318,89 @@
             // 
             this.txtEnderecoFuncionario.Location = new System.Drawing.Point(316, 58);
             this.txtEnderecoFuncionario.Name = "txtEnderecoFuncionario";
-            this.txtEnderecoFuncionario.Size = new System.Drawing.Size(126, 20);
+            this.txtEnderecoFuncionario.Size = new System.Drawing.Size(256, 20);
             this.txtEnderecoFuncionario.TabIndex = 41;
             // 
             // txtBairroFuncionario
             // 
             this.txtBairroFuncionario.Location = new System.Drawing.Point(316, 101);
             this.txtBairroFuncionario.Name = "txtBairroFuncionario";
-            this.txtBairroFuncionario.Size = new System.Drawing.Size(126, 20);
+            this.txtBairroFuncionario.Size = new System.Drawing.Size(256, 20);
             this.txtBairroFuncionario.TabIndex = 42;
             // 
             // txtCidadeFuncionario
             // 
             this.txtCidadeFuncionario.Location = new System.Drawing.Point(316, 144);
             this.txtCidadeFuncionario.Name = "txtCidadeFuncionario";
-            this.txtCidadeFuncionario.Size = new System.Drawing.Size(126, 20);
+            this.txtCidadeFuncionario.Size = new System.Drawing.Size(256, 20);
             this.txtCidadeFuncionario.TabIndex = 43;
             // 
             // txtPaisFuncionario
             // 
             this.txtPaisFuncionario.Location = new System.Drawing.Point(316, 230);
             this.txtPaisFuncionario.Name = "txtPaisFuncionario";
-            this.txtPaisFuncionario.Size = new System.Drawing.Size(134, 20);
+            this.txtPaisFuncionario.Size = new System.Drawing.Size(256, 20);
             this.txtPaisFuncionario.TabIndex = 45;
             // 
             // lblTelefone
             // 
             this.lblTelefone.AutoSize = true;
-            this.lblTelefone.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefone.Location = new System.Drawing.Point(312, 257);
             this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(252, 21);
+            this.lblTelefone.Size = new System.Drawing.Size(152, 20);
             this.lblTelefone.TabIndex = 51;
-            this.lblTelefone.Text = "Código do Tipo de Funcionário:";
+            this.lblTelefone.Text = "Tipo de Funcionário:";
             // 
             // lblPais
             // 
             this.lblPais.AutoSize = true;
-            this.lblPais.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPais.Location = new System.Drawing.Point(312, 208);
             this.lblPais.Name = "lblPais";
-            this.lblPais.Size = new System.Drawing.Size(43, 21);
+            this.lblPais.Size = new System.Drawing.Size(43, 20);
             this.lblPais.TabIndex = 56;
             this.lblPais.Text = "País:";
             // 
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
-            this.lblEstado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstado.Location = new System.Drawing.Point(312, 165);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(68, 21);
+            this.lblEstado.Size = new System.Drawing.Size(64, 20);
             this.lblEstado.TabIndex = 55;
             this.lblEstado.Text = "Estado:";
             // 
             // lblEndereco
             // 
             this.lblEndereco.AutoSize = true;
-            this.lblEndereco.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEndereco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEndereco.Location = new System.Drawing.Point(312, 36);
             this.lblEndereco.Name = "lblEndereco";
-            this.lblEndereco.Size = new System.Drawing.Size(89, 21);
+            this.lblEndereco.Size = new System.Drawing.Size(82, 20);
             this.lblEndereco.TabIndex = 52;
             this.lblEndereco.Text = "Endereço:";
             // 
             // lblCidade
             // 
             this.lblCidade.AutoSize = true;
-            this.lblCidade.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCidade.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCidade.Location = new System.Drawing.Point(312, 122);
             this.lblCidade.Name = "lblCidade";
-            this.lblCidade.Size = new System.Drawing.Size(73, 21);
+            this.lblCidade.Size = new System.Drawing.Size(63, 20);
             this.lblCidade.TabIndex = 54;
             this.lblCidade.Text = "Cidade:";
             // 
             // lblBairro
             // 
             this.lblBairro.AutoSize = true;
-            this.lblBairro.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBairro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBairro.Location = new System.Drawing.Point(312, 79);
             this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Size = new System.Drawing.Size(57, 21);
+            this.lblBairro.Size = new System.Drawing.Size(55, 20);
             this.lblBairro.TabIndex = 53;
             this.lblBairro.Text = "Bairro:";
-            // 
-            // lblRG
-            // 
-            this.lblRG.AutoSize = true;
-            this.lblRG.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRG.Location = new System.Drawing.Point(22, 77);
-            this.lblRG.Name = "lblRG";
-            this.lblRG.Size = new System.Drawing.Size(38, 21);
-            this.lblRG.TabIndex = 82;
-            this.lblRG.Text = "RG:";
-            // 
-            // lblNome
-            // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(22, 36);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(61, 21);
-            this.lblNome.TabIndex = 83;
-            this.lblNome.Text = "Nome:";
-            // 
-            // txtNomeFuncionario
-            // 
-            this.txtNomeFuncionario.Location = new System.Drawing.Point(26, 58);
-            this.txtNomeFuncionario.Name = "txtNomeFuncionario";
-            this.txtNomeFuncionario.Size = new System.Drawing.Size(125, 20);
-            this.txtNomeFuncionario.TabIndex = 84;
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(22, 122);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(55, 21);
-            this.lblEmail.TabIndex = 85;
-            this.lblEmail.Text = "Email:";
-            // 
-            // txtEmailFuncionario
-            // 
-            this.txtEmailFuncionario.Location = new System.Drawing.Point(26, 144);
-            this.txtEmailFuncionario.Name = "txtEmailFuncionario";
-            this.txtEmailFuncionario.Size = new System.Drawing.Size(125, 20);
-            this.txtEmailFuncionario.TabIndex = 86;
-            // 
-            // lblDataCadastro
-            // 
-            this.lblDataCadastro.AutoSize = true;
-            this.lblDataCadastro.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataCadastro.Location = new System.Drawing.Point(22, 165);
-            this.lblDataCadastro.Name = "lblDataCadastro";
-            this.lblDataCadastro.Size = new System.Drawing.Size(63, 21);
-            this.lblDataCadastro.TabIndex = 87;
-            this.lblDataCadastro.Text = "Senha:";
-            // 
-            // txtSenhaFuncionario
-            // 
-            this.txtSenhaFuncionario.Location = new System.Drawing.Point(26, 187);
-            this.txtSenhaFuncionario.Name = "txtSenhaFuncionario";
-            this.txtSenhaFuncionario.Size = new System.Drawing.Size(125, 20);
-            this.txtSenhaFuncionario.TabIndex = 88;
-            // 
-            // dtpDataCadastro
-            // 
-            this.dtpDataCadastro.CustomFormat = "yyyy-MM-dd";
-            this.dtpDataCadastro.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpDataCadastro.Location = new System.Drawing.Point(26, 234);
-            this.dtpDataCadastro.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dtpDataCadastro.Name = "dtpDataCadastro";
-            this.dtpDataCadastro.Size = new System.Drawing.Size(125, 20);
-            this.dtpDataCadastro.TabIndex = 89;
             // 
             // BtnShowExcluir
             // 
@@ -446,13 +408,14 @@
             this.BtnShowExcluir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.BtnShowExcluir.FlatAppearance.BorderSize = 2;
             this.BtnShowExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnShowExcluir.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnShowExcluir.Location = new System.Drawing.Point(530, 503);
+            this.BtnShowExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnShowExcluir.Location = new System.Drawing.Point(439, 457);
             this.BtnShowExcluir.Name = "BtnShowExcluir";
             this.BtnShowExcluir.Size = new System.Drawing.Size(169, 45);
             this.BtnShowExcluir.TabIndex = 69;
             this.BtnShowExcluir.Text = "Página de Exclusão de Registro";
             this.BtnShowExcluir.UseVisualStyleBackColor = false;
+            this.BtnShowExcluir.Click += new System.EventHandler(this.BtnShowExcluir_Click);
             // 
             // btnShowAtualizar
             // 
@@ -460,13 +423,14 @@
             this.btnShowAtualizar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.btnShowAtualizar.FlatAppearance.BorderSize = 2;
             this.btnShowAtualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShowAtualizar.Font = new System.Drawing.Font("Century Schoolbook", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowAtualizar.Location = new System.Drawing.Point(114, 503);
+            this.btnShowAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowAtualizar.Location = new System.Drawing.Point(89, 457);
             this.btnShowAtualizar.Name = "btnShowAtualizar";
             this.btnShowAtualizar.Size = new System.Drawing.Size(169, 45);
             this.btnShowAtualizar.TabIndex = 68;
             this.btnShowAtualizar.Text = "Página de Atualização de Registro";
             this.btnShowAtualizar.UseVisualStyleBackColor = false;
+            this.btnShowAtualizar.Click += new System.EventHandler(this.btnShowAtualizar_Click);
             // 
             // btnInserirFuncionario
             // 
@@ -474,20 +438,22 @@
             this.btnInserirFuncionario.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.btnInserirFuncionario.FlatAppearance.BorderSize = 2;
             this.btnInserirFuncionario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInserirFuncionario.Font = new System.Drawing.Font("Century Schoolbook", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInserirFuncionario.Location = new System.Drawing.Point(325, 503);
+            this.btnInserirFuncionario.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInserirFuncionario.Location = new System.Drawing.Point(264, 457);
             this.btnInserirFuncionario.Name = "btnInserirFuncionario";
             this.btnInserirFuncionario.Size = new System.Drawing.Size(169, 45);
             this.btnInserirFuncionario.TabIndex = 67;
             this.btnInserirFuncionario.Text = "Cadastrar";
             this.btnInserirFuncionario.UseVisualStyleBackColor = false;
+            this.btnInserirFuncionario.Click += new System.EventHandler(this.btnInserirFuncionario_Click);
             // 
             // InserirFuncionário
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(201)))), ((int)(((byte)(201)))));
-            this.ClientSize = new System.Drawing.Size(785, 560);
+            this.ClientSize = new System.Drawing.Size(725, 520);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.BtnShowExcluir);
             this.Controls.Add(this.btnShowAtualizar);
             this.Controls.Add(this.btnInserirFuncionario);
@@ -497,13 +463,13 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "InserirFuncionário";
             this.Text = "InserirFuncionário";
+            this.Load += new System.EventHandler(this.InserirFuncionário_Load);
             this.pnlTitulo.ResumeLayout(false);
             this.pnlTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -517,7 +483,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.DateTimePicker dtpDataCadastro;
         private System.Windows.Forms.TextBox txtSenhaFuncionario;
         private System.Windows.Forms.Label lblDataCadastro;
         private System.Windows.Forms.TextBox txtEmailFuncionario;
@@ -527,9 +492,7 @@
         private System.Windows.Forms.Label lblRG;
         private System.Windows.Forms.MaskedTextBox mskTelefoneFuncionario;
         private System.Windows.Forms.MaskedTextBox mskRGFuncionario;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker dtpDataNascimentoFuncionario;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ComboBox cboEstadoFuncionario;
         private System.Windows.Forms.ComboBox cboCodTipoFuncionario;
         private System.Windows.Forms.Label lblDataNasc;
