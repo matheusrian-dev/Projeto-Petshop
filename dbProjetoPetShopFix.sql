@@ -76,7 +76,7 @@ CREATE TABLE `cliente` (
   `dataCadastroCliente` date DEFAULT NULL,
   `dataNascimentoCliente` date DEFAULT NULL,
   `nomeCliente` varchar(100) DEFAULT NULL,
-  `rgCliente` varchar(10) DEFAULT NULL,
+  `rgCliente` varchar(14) DEFAULT NULL,
   `telefoneCliente` varchar(16) DEFAULT NULL,
   `emailCliente` varchar(80) DEFAULT NULL,
   `enderecoCliente` varchar(50) DEFAULT NULL,
@@ -124,7 +124,7 @@ CREATE TABLE `funcionario` (
   `dataCadastro` date DEFAULT NULL,
   `dataNascimento` date DEFAULT NULL,
   `nomeFuncionario` varchar(100) DEFAULT NULL,
-  `rgFuncionario` varchar(10) DEFAULT NULL,
+  `rgFuncionario` varchar(14) DEFAULT NULL,
   `telefoneFuncionario` varchar(16) DEFAULT NULL,
   `emailFuncionario` varchar(80) DEFAULT NULL,
   `senhaFuncionario` varchar(50) DEFAULT NULL,
@@ -134,7 +134,7 @@ CREATE TABLE `funcionario` (
   `paisFuncionario` varchar(45) DEFAULT NULL,
   `tipoFuncionario` int(11) DEFAULT NULL,
   PRIMARY KEY (`codFuncionario`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -162,4 +162,4 @@ CREATE TABLE `servico` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-12-06 13:55:17
+-- Dump completed on 2019-12-09 16:49:36

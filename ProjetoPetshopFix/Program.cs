@@ -16,7 +16,7 @@ namespace ProjetoPetshopFix
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InserirFuncionário());
+            Application.Run(new Login());
         }
     }
 }

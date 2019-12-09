@@ -37,21 +37,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Titulo = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.picMinimize = new System.Windows.Forms.PictureBox();
+            this.picClose = new System.Windows.Forms.PictureBox();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.picMinimizar = new System.Windows.Forms.PictureBox();
-            this.picFechar = new System.Windows.Forms.PictureBox();
             this.btnExpandir = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Titulo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFechar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExpandir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -74,7 +70,7 @@
             // pnlChoose
             // 
             this.pnlChoose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pnlChoose.Location = new System.Drawing.Point(50, 77);
+            this.pnlChoose.Location = new System.Drawing.Point(54, 70);
             this.pnlChoose.Name = "pnlChoose";
             this.pnlChoose.Size = new System.Drawing.Size(20, 70);
             this.pnlChoose.TabIndex = 5;
@@ -86,12 +82,13 @@
             this.btnShowEmitir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShowEmitir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShowEmitir.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnShowEmitir.Location = new System.Drawing.Point(73, 149);
+            this.btnShowEmitir.Location = new System.Drawing.Point(77, 144);
             this.btnShowEmitir.Name = "btnShowEmitir";
             this.btnShowEmitir.Size = new System.Drawing.Size(163, 70);
             this.btnShowEmitir.TabIndex = 1;
             this.btnShowEmitir.Text = "Emissão de\r\n Relatórios";
             this.btnShowEmitir.UseVisualStyleBackColor = true;
+            this.btnShowEmitir.Click += new System.EventHandler(this.btnShowEmitir_Click);
             // 
             // btnShowGerenciar
             // 
@@ -99,7 +96,7 @@
             this.btnShowGerenciar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnShowGerenciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShowGerenciar.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.btnShowGerenciar.Location = new System.Drawing.Point(73, 77);
+            this.btnShowGerenciar.Location = new System.Drawing.Point(77, 70);
             this.btnShowGerenciar.Name = "btnShowGerenciar";
             this.btnShowGerenciar.Size = new System.Drawing.Size(163, 70);
             this.btnShowGerenciar.TabIndex = 0;
@@ -139,16 +136,17 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
+            this.pictureBox1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
+            this.pictureBox1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
             // 
             // Titulo
             // 
             this.Titulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(201)))), ((int)(((byte)(201)))));
             this.Titulo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Titulo.Controls.Add(this.pictureBox5);
-            this.Titulo.Controls.Add(this.pictureBox4);
+            this.Titulo.Controls.Add(this.picMinimize);
+            this.Titulo.Controls.Add(this.picClose);
             this.Titulo.Controls.Add(this.lblTitulo);
-            this.Titulo.Controls.Add(this.picMinimizar);
-            this.Titulo.Controls.Add(this.picFechar);
             this.Titulo.Controls.Add(this.btnExpandir);
             this.Titulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.Titulo.Location = new System.Drawing.Point(240, 0);
@@ -157,63 +155,43 @@
             this.Titulo.Size = new System.Drawing.Size(572, 50);
             this.Titulo.TabIndex = 2;
             // 
-            // pictureBox5
+            // picMinimize
             // 
-            this.pictureBox5.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.ErrorImage")));
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.InitialImage")));
-            this.pictureBox5.Location = new System.Drawing.Point(486, 3);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(39, 42);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 8;
-            this.pictureBox5.TabStop = false;
+            this.picMinimize.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picMinimize.BackgroundImage")));
+            this.picMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picMinimize.ErrorImage = ((System.Drawing.Image)(resources.GetObject("picMinimize.ErrorImage")));
+            this.picMinimize.InitialImage = ((System.Drawing.Image)(resources.GetObject("picMinimize.InitialImage")));
+            this.picMinimize.Location = new System.Drawing.Point(494, 8);
+            this.picMinimize.Name = "picMinimize";
+            this.picMinimize.Size = new System.Drawing.Size(30, 30);
+            this.picMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picMinimize.TabIndex = 12;
+            this.picMinimize.TabStop = false;
+            this.picMinimize.Click += new System.EventHandler(this.picMinimize_Click);
             // 
-            // pictureBox4
+            // picClose
             // 
-            this.pictureBox4.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.ErrorImage")));
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.InitialImage")));
-            this.pictureBox4.Location = new System.Drawing.Point(531, 3);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(39, 42);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 7;
-            this.pictureBox4.TabStop = false;
+            this.picClose.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picClose.BackgroundImage")));
+            this.picClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.picClose.ErrorImage = ((System.Drawing.Image)(resources.GetObject("picClose.ErrorImage")));
+            this.picClose.InitialImage = ((System.Drawing.Image)(resources.GetObject("picClose.InitialImage")));
+            this.picClose.Location = new System.Drawing.Point(530, 8);
+            this.picClose.Name = "picClose";
+            this.picClose.Size = new System.Drawing.Size(30, 30);
+            this.picClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picClose.TabIndex = 11;
+            this.picClose.TabStop = false;
+            this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(199, 12);
+            this.lblTitulo.Location = new System.Drawing.Point(135, 14);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(148, 25);
             this.lblTitulo.TabIndex = 5;
             this.lblTitulo.Text = "Administração";
-            // 
-            // picMinimizar
-            // 
-            this.picMinimizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picMinimizar.BackgroundImage")));
-            this.picMinimizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picMinimizar.Location = new System.Drawing.Point(671, 3);
-            this.picMinimizar.Name = "picMinimizar";
-            this.picMinimizar.Size = new System.Drawing.Size(35, 35);
-            this.picMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picMinimizar.TabIndex = 3;
-            this.picMinimizar.TabStop = false;
-            // 
-            // picFechar
-            // 
-            this.picFechar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picFechar.BackgroundImage")));
-            this.picFechar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picFechar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picFechar.Location = new System.Drawing.Point(712, 3);
-            this.picFechar.Name = "picFechar";
-            this.picFechar.Size = new System.Drawing.Size(35, 35);
-            this.picFechar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picFechar.TabIndex = 1;
-            this.picFechar.TabStop = false;
             // 
             // btnExpandir
             // 
@@ -225,12 +203,13 @@
             this.btnExpandir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnExpandir.TabIndex = 0;
             this.btnExpandir.TabStop = false;
+            this.btnExpandir.Click += new System.EventHandler(this.btnExpandir_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(248, 77);
+            this.label5.Location = new System.Drawing.Point(260, 144);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(552, 100);
             this.label5.TabIndex = 4;
@@ -242,7 +221,7 @@
             this.pictureBox2.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.ErrorImage")));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(413, 206);
+            this.pictureBox2.Location = new System.Drawing.Point(597, 274);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(203, 124);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -264,16 +243,16 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MenuAdm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuAdm";
+            this.Load += new System.EventHandler(this.MenuAdm_Load);
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Titulo.ResumeLayout(false);
             this.Titulo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFechar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnExpandir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -292,12 +271,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel Titulo;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.PictureBox picMinimizar;
-        private System.Windows.Forms.PictureBox picFechar;
         private System.Windows.Forms.PictureBox btnExpandir;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox picMinimize;
+        private System.Windows.Forms.PictureBox picClose;
     }
 }

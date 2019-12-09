@@ -64,11 +64,11 @@
     <Compile Include="Entities\Cliente.cs" />
     <Compile Include="Entities\Enum\TipoFuncionario.cs" />
     <Compile Include="Entities\Funcionario.cs" />
-    <Compile Include="InserirFuncionário.cs">
+    <Compile Include="InserirFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InserirFuncionário.designer.cs">
-      <DependentUpon>InserirFuncionário.cs</DependentUpon>
+    <Compile Include="InserirFuncionario.designer.cs">
+      <DependentUpon>InserirFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -93,8 +93,8 @@
     <Compile Include="Services\Agendamento.cs" />
     <Compile Include="Services\Execucao.cs" />
     <Compile Include="Services\Servicos.cs" />
-    <EmbeddedResource Include="InserirFuncionário.resx">
-      <DependentUpon>InserirFuncionário.cs</DependentUpon>
+    <EmbeddedResource Include="InserirFuncionario.resx">
+      <DependentUpon>InserirFuncionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

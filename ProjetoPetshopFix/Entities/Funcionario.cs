@@ -107,6 +107,37 @@ namespace ProjetoPetshopFix.Entities
             return dt;
         }
 
+        public DataTable RealizarLogin()
+        {
+            DataTable dt = null;
+            try
+            {
+                con.Conectar();
+                string query = "SELECT * FROM funcionario WHERE emailFuncionario = '" + Email + "' AND senhaFuncionario = '" + Senha + "' ";
+                dt = con.RetDataTable(query);
+                if (dt.Rows.Count > 0)
+                {
+                    Nome = dt.Rows[0]["nomeFuncionario"].ToString();
+                    CodFuncionario = int.Parse(dt.Rows[0]["codFuncionario"].ToString());
+                    int codTipo = int.Parse(dt.Rows[0]["tipoFuncionario"].ToString());
+                    TipoFuncionario = (TipoFuncionario)codTipo; 
+                }
+                else
+                {
+                    MessageBox.Show("Email ou Senha inválido.");
+                }
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                con.Desconectar();
+            }
+            return dt;
+        }
+
         public bool Inserir()
         {
             if (ValidarCadastro(Rg, Email))
@@ -155,13 +186,19 @@ namespace ProjetoPetshopFix.Entities
         public bool ValidarCadastro(string rgInserido, string emailInserido)
         {
             con.Conectar();
-            string query = "SELECT * FROM funcionario WHERE rgFuncionario = " + rgInserido + " OR emailFuncionario = "+ emailInserido;
+            string query = "SELECT * FROM funcionario WHERE rgFuncionario = '" + rgInserido + "' OR emailFuncionario = '" + emailInserido + "' ";
             DataTable dt = con.RetDataTable(query);
-            if(dt == null)
+            if (dt.Rows.Count == 0)
             {
+                con.Desconectar();
                 return false;
             }
-            return true;
+            else 
+            {
+                con.Desconectar();
+                return true;
+            }
+            
         }
 
         public bool BuscarCod(int codInserido)

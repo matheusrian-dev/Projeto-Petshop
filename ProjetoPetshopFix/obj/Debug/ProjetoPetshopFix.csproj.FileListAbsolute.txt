@@ -18,7 +18,6 @@ C:\Users\Pichau\Desktop\ProjetoPetShop\ProjetoPetshopFix\ProjetoPetshopFix\obj\D
 C:\Users\Pichau\Desktop\ProjetoPetShop\ProjetoPetshopFix\ProjetoPetshopFix\obj\Debug\ProjetoPetshopFix.exe
 C:\Users\Pichau\Desktop\ProjetoPetShop\ProjetoPetshopFix\ProjetoPetshopFix\obj\Debug\ProjetoPetshopFix.pdb
 C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\ProjetoPetshopFix\obj\Debug\ProjetoPetshopFix.csprojAssemblyReference.cache
-C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\ProjetoPetshopFix\obj\Debug\ProjetoPetshopFix.InserirFuncionário.resources
 C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\ProjetoPetshopFix\obj\Debug\ProjetoPetshopFix.Login.resources
 C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\ProjetoPetshopFix\obj\Debug\ProjetoPetshopFix.MenuAdm.resources
 C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\ProjetoPetshopFix\obj\Debug\ProjetoPetshopFix.MenuBalconista.resources
@@ -40,3 +39,4 @@ C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\Pro
 C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\ProjetoPetshopFix\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\ProjetoPetshopFix\bin\Debug\MySql.Data.xml
 C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\ProjetoPetshopFix\obj\Debug\ProjetoPetshopFix.csproj.CopyComplete
+C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\ProjetoPetshopFix\obj\Debug\ProjetoPetshopFix.InserirFuncionario.resources
