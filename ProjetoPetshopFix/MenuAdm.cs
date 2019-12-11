@@ -32,6 +32,8 @@ namespace ProjetoPetshopFix
                 pnlChoose.Visible = true;
             }
             this.pnlChoose.Location = new Point(56, 70);
+            InserirFuncionario inserir = new InserirFuncionario();
+            inserir.Show();
         }
 
         private void pnlChoose_Paint(object sender, PaintEventArgs e)

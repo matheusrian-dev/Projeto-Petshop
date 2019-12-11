@@ -77,7 +77,6 @@ namespace ProjetoPetshopFix
             if (result.Equals(DialogResult.OK))
             {
                 this.Close();
-                new MenuAdm().Show();
             }
             else
             {
