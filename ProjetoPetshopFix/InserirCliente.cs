@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ProjetoPetshopFix
 {
-    public partial class ExcluirFuncionario : Form
+    public partial class InserirCliente : Form
     {
-        public ExcluirFuncionario()
+        public InserirCliente()
         {
             InitializeComponent();
-        }
-
-        private void ExcluirFuncionario_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
