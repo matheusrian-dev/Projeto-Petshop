@@ -60,10 +60,40 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBaseConnection.cs" />
+    <Compile Include="EditarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarCliente.Designer.cs">
+      <DependentUpon>EditarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarFuncionario.Designer.cs">
+      <DependentUpon>EditarFuncionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Animal.cs" />
     <Compile Include="Entities\Cliente.cs" />
     <Compile Include="Entities\Enum\TipoFuncionario.cs" />
     <Compile Include="Entities\Funcionario.cs" />
+    <Compile Include="ExcluirCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcluirCliente.Designer.cs">
+      <DependentUpon>ExcluirCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcluirFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcluirFuncionario.Designer.cs">
+      <DependentUpon>ExcluirFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InserirCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InserirCliente.Designer.cs">
+      <DependentUpon>InserirCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="InserirFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +123,21 @@
     <Compile Include="Services\Agendamento.cs" />
     <Compile Include="Services\Execucao.cs" />
     <Compile Include="Services\Servicos.cs" />
+    <EmbeddedResource Include="EditarCliente.resx">
+      <DependentUpon>EditarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarFuncionario.resx">
+      <DependentUpon>EditarFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcluirCliente.resx">
+      <DependentUpon>ExcluirCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExcluirFuncionario.resx">
+      <DependentUpon>ExcluirFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InserirCliente.resx">
+      <DependentUpon>InserirCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InserirFuncionario.resx">
       <DependentUpon>InserirFuncionario.cs</DependentUpon>
     </EmbeddedResource>
