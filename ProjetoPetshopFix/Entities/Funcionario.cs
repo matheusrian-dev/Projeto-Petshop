@@ -204,7 +204,7 @@ namespace ProjetoPetshopFix.Entities
         public bool BuscarCod(int codInserido)
         {
             con.Conectar();
-            string query = "SELECT * FROM funcionario WHERE codInserido = " + codInserido;
+            string query = "SELECT * FROM funcionario WHERE codFuncionario = " + codInserido;
             DataTable dt = con.RetDataTable(query);
             if (dt == null)
             {

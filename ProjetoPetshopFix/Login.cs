@@ -43,10 +43,12 @@ namespace ProjetoPetshopFix
             // MenuVeterinario menuVeterinario = new MenuVeterinario();}
             // this.Hide();
             // menuVeterinario.Show();}
-            //if(funcionario.TipoFuncionario == Balconista){
-            // MenuBalconista menuBalconista = new MenuBalconista();}
-            // this.Hide(); 
-            // menuBalconista.Show();}
+            else if(funcionario.TipoFuncionario == TipoFuncionario.Balconista)
+            {
+                 MenuBalconista menuBalconista = new MenuBalconista();
+                this.Hide(); 
+                menuBalconista.Show();
+            }
         }
 
         private void btnFechar_Click(object sender, EventArgs e)

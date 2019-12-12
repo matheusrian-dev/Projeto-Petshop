@@ -42,7 +42,7 @@
             this.txtNomeServico = new System.Windows.Forms.TextBox();
             this.BtnShowExcluir = new System.Windows.Forms.Button();
             this.btnShowAtualizar = new System.Windows.Forms.Button();
-            this.btnInserirCliente = new System.Windows.Forms.Button();
+            this.btnInserirServiço = new System.Windows.Forms.Button();
             this.picRetornar = new System.Windows.Forms.PictureBox();
             this.pnlTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMinimizar)).BeginInit();
@@ -73,6 +73,7 @@
             this.picMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picMinimizar.TabIndex = 32;
             this.picMinimizar.TabStop = false;
+            this.picMinimizar.Click += new System.EventHandler(this.picMinimizar_Click);
             // 
             // label1
             // 
@@ -88,10 +89,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 56);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(507, 22);
+            this.label2.Size = new System.Drawing.Size(463, 24);
             this.label2.TabIndex = 32;
             this.label2.Text = "Insira as Informações do serviço que deseja cadastrar:";
             // 
@@ -105,14 +106,14 @@
             this.groupBox1.Controls.Add(this.txtNomeServico);
             this.groupBox1.Location = new System.Drawing.Point(16, 123);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(427, 201);
+            this.groupBox1.Size = new System.Drawing.Size(427, 295);
             this.groupBox1.TabIndex = 33;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados de Serviço";
             // 
             // mskValorServico
             // 
-            this.mskValorServico.Location = new System.Drawing.Point(19, 155);
+            this.mskValorServico.Location = new System.Drawing.Point(19, 262);
             this.mskValorServico.Mask = "$999.99";
             this.mskValorServico.Name = "mskValorServico";
             this.mskValorServico.Size = new System.Drawing.Size(361, 20);
@@ -121,38 +122,39 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(15, 131);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(15, 238);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 21);
+            this.label3.Size = new System.Drawing.Size(128, 20);
             this.label3.TabIndex = 67;
             this.label3.Text = "Valor do Serviço:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(15, 80);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(176, 21);
+            this.label4.Size = new System.Drawing.Size(162, 20);
             this.label4.TabIndex = 67;
             this.label4.Text = "Descrição do Serviço:";
             // 
             // lblNome
             // 
             this.lblNome.AutoSize = true;
-            this.lblNome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.Location = new System.Drawing.Point(15, 29);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(146, 21);
+            this.lblNome.Size = new System.Drawing.Size(133, 20);
             this.lblNome.TabIndex = 67;
             this.lblNome.Text = "Nome do Serviço:";
             // 
             // txtDescricaoServico
             // 
             this.txtDescricaoServico.Location = new System.Drawing.Point(19, 106);
+            this.txtDescricaoServico.Multiline = true;
             this.txtDescricaoServico.Name = "txtDescricaoServico";
-            this.txtDescricaoServico.Size = new System.Drawing.Size(361, 20);
+            this.txtDescricaoServico.Size = new System.Drawing.Size(361, 129);
             this.txtDescricaoServico.TabIndex = 36;
             // 
             // txtNomeServico
@@ -168,13 +170,14 @@
             this.BtnShowExcluir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.BtnShowExcluir.FlatAppearance.BorderSize = 3;
             this.BtnShowExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnShowExcluir.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnShowExcluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnShowExcluir.Location = new System.Drawing.Point(480, 289);
             this.BtnShowExcluir.Name = "BtnShowExcluir";
             this.BtnShowExcluir.Size = new System.Drawing.Size(169, 72);
             this.BtnShowExcluir.TabIndex = 105;
             this.BtnShowExcluir.Text = "Página de Exclusão de Registro";
             this.BtnShowExcluir.UseVisualStyleBackColor = false;
+            this.BtnShowExcluir.Click += new System.EventHandler(this.BtnShowExcluir_Click);
             // 
             // btnShowAtualizar
             // 
@@ -182,27 +185,29 @@
             this.btnShowAtualizar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
             this.btnShowAtualizar.FlatAppearance.BorderSize = 3;
             this.btnShowAtualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShowAtualizar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShowAtualizar.Location = new System.Drawing.Point(480, 104);
             this.btnShowAtualizar.Name = "btnShowAtualizar";
             this.btnShowAtualizar.Size = new System.Drawing.Size(169, 72);
             this.btnShowAtualizar.TabIndex = 104;
             this.btnShowAtualizar.Text = "Página de Atualização de Registro";
             this.btnShowAtualizar.UseVisualStyleBackColor = false;
+            this.btnShowAtualizar.Click += new System.EventHandler(this.btnShowAtualizar_Click);
             // 
-            // btnInserirCliente
+            // btnInserirServiço
             // 
-            this.btnInserirCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
-            this.btnInserirCliente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
-            this.btnInserirCliente.FlatAppearance.BorderSize = 3;
-            this.btnInserirCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInserirCliente.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInserirCliente.Location = new System.Drawing.Point(480, 193);
-            this.btnInserirCliente.Name = "btnInserirCliente";
-            this.btnInserirCliente.Size = new System.Drawing.Size(169, 72);
-            this.btnInserirCliente.TabIndex = 103;
-            this.btnInserirCliente.Text = "Cadastrar";
-            this.btnInserirCliente.UseVisualStyleBackColor = false;
+            this.btnInserirServiço.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(190)))), ((int)(((byte)(190)))));
+            this.btnInserirServiço.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(46)))), ((int)(((byte)(46)))));
+            this.btnInserirServiço.FlatAppearance.BorderSize = 3;
+            this.btnInserirServiço.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInserirServiço.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInserirServiço.Location = new System.Drawing.Point(480, 193);
+            this.btnInserirServiço.Name = "btnInserirServiço";
+            this.btnInserirServiço.Size = new System.Drawing.Size(169, 72);
+            this.btnInserirServiço.TabIndex = 103;
+            this.btnInserirServiço.Text = "Cadastrar";
+            this.btnInserirServiço.UseVisualStyleBackColor = false;
+            this.btnInserirServiço.Click += new System.EventHandler(this.btnInserirServico_Click);
             // 
             // picRetornar
             // 
@@ -210,29 +215,33 @@
             this.picRetornar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picRetornar.ErrorImage = ((System.Drawing.Image)(resources.GetObject("picRetornar.ErrorImage")));
             this.picRetornar.InitialImage = ((System.Drawing.Image)(resources.GetObject("picRetornar.InitialImage")));
-            this.picRetornar.Location = new System.Drawing.Point(696, 310);
+            this.picRetornar.Location = new System.Drawing.Point(696, 371);
             this.picRetornar.Name = "picRetornar";
             this.picRetornar.Size = new System.Drawing.Size(49, 51);
             this.picRetornar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picRetornar.TabIndex = 106;
             this.picRetornar.TabStop = false;
+            this.picRetornar.Click += new System.EventHandler(this.picRetornar_Click);
             // 
             // InserirServico
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(201)))), ((int)(((byte)(201)))), ((int)(((byte)(201)))));
-            this.ClientSize = new System.Drawing.Size(750, 379);
+            this.ClientSize = new System.Drawing.Size(750, 430);
             this.Controls.Add(this.picRetornar);
             this.Controls.Add(this.BtnShowExcluir);
             this.Controls.Add(this.btnShowAtualizar);
-            this.Controls.Add(this.btnInserirCliente);
+            this.Controls.Add(this.btnInserirServiço);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pnlTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "InserirServico";
             this.Text = "InserirServico";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.InserirServico_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.InserirServico_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.InserirServico_MouseUp);
             this.pnlTitulo.ResumeLayout(false);
             this.pnlTitulo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMinimizar)).EndInit();
@@ -259,7 +268,7 @@
         private System.Windows.Forms.TextBox txtNomeServico;
         private System.Windows.Forms.Button BtnShowExcluir;
         private System.Windows.Forms.Button btnShowAtualizar;
-        private System.Windows.Forms.Button btnInserirCliente;
+        private System.Windows.Forms.Button btnInserirServiço;
         private System.Windows.Forms.PictureBox picRetornar;
     }
 }

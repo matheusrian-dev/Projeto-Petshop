@@ -48,22 +48,16 @@ namespace ProjetoPetshopFix
 
         private void BtnShowExcluir_Click(object sender, EventArgs e)
         {
-
+            ExcluirFuncionario excluir = new ExcluirFuncionario();
+            this.Hide();
+            excluir.Show();
         }
 
         private void btnShowAtualizar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dtpDataNascimentoFuncionario_ValueChanged(object sender, EventArgs e)
-        {
-
+            EditarFuncionario editar = new EditarFuncionario();
+            this.Hide();
+            editar.Show();
         }
 
         private void picMinimizar_Click(object sender, EventArgs e)

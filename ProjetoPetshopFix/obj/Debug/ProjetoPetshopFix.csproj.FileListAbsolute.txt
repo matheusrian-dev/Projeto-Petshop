@@ -40,3 +40,11 @@ C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\Pro
 C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\ProjetoPetshopFix\bin\Debug\MySql.Data.xml
 C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\ProjetoPetshopFix\obj\Debug\ProjetoPetshopFix.csproj.CopyComplete
 C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\ProjetoPetshopFix\obj\Debug\ProjetoPetshopFix.InserirFuncionario.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\ProjetoPetshopFix\obj\Debug\ProjetoPetshopFix.EditarCliente.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\ProjetoPetshopFix\obj\Debug\ProjetoPetshopFix.EditarFuncionario.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\ProjetoPetshopFix\obj\Debug\ProjetoPetshopFix.EditarServico.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\ProjetoPetshopFix\obj\Debug\ProjetoPetshopFix.ExcluirCliente.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\ProjetoPetshopFix\obj\Debug\ProjetoPetshopFix.ExcluirFuncionario.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\ProjetoPetshopFix\obj\Debug\ProjetoPetshopFix.ExcluirServico.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\ProjetoPetshopFix\obj\Debug\ProjetoPetshopFix.InserirCliente.resources
+C:\Users\MATHEUS\Desktop\Notas Importantes\Projeto-Fixacao\ProjetoPetshopFix\ProjetoPetshopFix\obj\Debug\ProjetoPetshopFix.InserirServico.resources
