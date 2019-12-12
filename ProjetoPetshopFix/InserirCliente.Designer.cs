@@ -34,28 +34,28 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblNome = new System.Windows.Forms.Label();
-            this.txtNomeCliente = new System.Windows.Forms.TextBox();
-            this.lblRG = new System.Windows.Forms.Label();
-            this.mskRGCliente = new System.Windows.Forms.MaskedTextBox();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.txtEmailCliente = new System.Windows.Forms.TextBox();
-            this.lblDataCadastro = new System.Windows.Forms.Label();
-            this.dtpDataNascimentoFuncionario = new System.Windows.Forms.DateTimePicker();
-            this.lblDataNasc = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.lblTelefone = new System.Windows.Forms.Label();
-            this.mskTelefoneCliente = new System.Windows.Forms.MaskedTextBox();
-            this.lblEndereco = new System.Windows.Forms.Label();
-            this.txtEnderecoCliente = new System.Windows.Forms.TextBox();
-            this.lblBairro = new System.Windows.Forms.Label();
-            this.txtBairroCliente = new System.Windows.Forms.TextBox();
-            this.lblCidade = new System.Windows.Forms.Label();
-            this.txtCidadeCliente = new System.Windows.Forms.TextBox();
-            this.lblEstado = new System.Windows.Forms.Label();
-            this.cboEstadoCliente = new System.Windows.Forms.ComboBox();
-            this.lblPais = new System.Windows.Forms.Label();
             this.txtPaisCliente = new System.Windows.Forms.TextBox();
+            this.lblPais = new System.Windows.Forms.Label();
+            this.cboEstadoCliente = new System.Windows.Forms.ComboBox();
+            this.lblEstado = new System.Windows.Forms.Label();
+            this.lblCidade = new System.Windows.Forms.Label();
+            this.lblBairro = new System.Windows.Forms.Label();
+            this.txtEnderecoCliente = new System.Windows.Forms.TextBox();
+            this.lblEndereco = new System.Windows.Forms.Label();
+            this.mskTelefoneCliente = new System.Windows.Forms.MaskedTextBox();
+            this.lblTelefone = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.lblDataNasc = new System.Windows.Forms.Label();
+            this.dtpDataNascimentoFuncionario = new System.Windows.Forms.DateTimePicker();
+            this.lblDataCadastro = new System.Windows.Forms.Label();
+            this.txtEmailCliente = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.mskRGCliente = new System.Windows.Forms.MaskedTextBox();
+            this.lblRG = new System.Windows.Forms.Label();
+            this.txtNomeCliente = new System.Windows.Forms.TextBox();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.txtBairroCliente = new System.Windows.Forms.TextBox();
+            this.txtCidadeCliente = new System.Windows.Forms.TextBox();
             this.BtnShowExcluir = new System.Windows.Forms.Button();
             this.btnShowAtualizar = new System.Windows.Forms.Button();
             this.btnInserirCliente = new System.Windows.Forms.Button();
@@ -97,9 +97,9 @@
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
             this.label1.Location = new System.Drawing.Point(137, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(536, 31);
+            this.label1.Size = new System.Drawing.Size(479, 31);
             this.label1.TabIndex = 30;
-            this.label1.Text = "Gerenciamento de Dados dos Funcionários";
+            this.label1.Text = "Gerenciamento de Dados dos Clientes";
             // 
             // label2
             // 
@@ -141,176 +141,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informações Pessoais";
             // 
-            // lblNome
+            // txtPaisCliente
             // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome.Location = new System.Drawing.Point(22, 37);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(61, 21);
-            this.lblNome.TabIndex = 83;
-            this.lblNome.Text = "Nome:";
+            this.txtPaisCliente.Location = new System.Drawing.Point(251, 254);
+            this.txtPaisCliente.Name = "txtPaisCliente";
+            this.txtPaisCliente.Size = new System.Drawing.Size(160, 21);
+            this.txtPaisCliente.TabIndex = 102;
             // 
-            // txtNomeCliente
+            // lblPais
             // 
-            this.txtNomeCliente.Location = new System.Drawing.Point(26, 61);
-            this.txtNomeCliente.Name = "txtNomeCliente";
-            this.txtNomeCliente.Size = new System.Drawing.Size(147, 21);
-            this.txtNomeCliente.TabIndex = 84;
-            // 
-            // lblRG
-            // 
-            this.lblRG.AutoSize = true;
-            this.lblRG.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRG.Location = new System.Drawing.Point(22, 85);
-            this.lblRG.Name = "lblRG";
-            this.lblRG.Size = new System.Drawing.Size(38, 21);
-            this.lblRG.TabIndex = 85;
-            this.lblRG.Text = "RG:";
-            // 
-            // mskRGCliente
-            // 
-            this.mskRGCliente.Location = new System.Drawing.Point(26, 109);
-            this.mskRGCliente.Mask = "Aa-99.999.999";
-            this.mskRGCliente.Name = "mskRGCliente";
-            this.mskRGCliente.Size = new System.Drawing.Size(147, 21);
-            this.mskRGCliente.TabIndex = 86;
-            // 
-            // lblEmail
-            // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(22, 133);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(55, 21);
-            this.lblEmail.TabIndex = 87;
-            this.lblEmail.Text = "Email:";
-            // 
-            // txtEmailCliente
-            // 
-            this.txtEmailCliente.Location = new System.Drawing.Point(26, 157);
-            this.txtEmailCliente.Name = "txtEmailCliente";
-            this.txtEmailCliente.Size = new System.Drawing.Size(147, 21);
-            this.txtEmailCliente.TabIndex = 88;
-            // 
-            // lblDataCadastro
-            // 
-            this.lblDataCadastro.AutoSize = true;
-            this.lblDataCadastro.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataCadastro.Location = new System.Drawing.Point(22, 181);
-            this.lblDataCadastro.Name = "lblDataCadastro";
-            this.lblDataCadastro.Size = new System.Drawing.Size(211, 21);
-            this.lblDataCadastro.TabIndex = 89;
-            this.lblDataCadastro.Text = "Data do Cadastramento:";
-            // 
-            // dtpDataNascimentoFuncionario
-            // 
-            this.dtpDataNascimentoFuncionario.CustomFormat = "yyyy-MM-dd";
-            this.dtpDataNascimentoFuncionario.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpDataNascimentoFuncionario.Location = new System.Drawing.Point(26, 205);
-            this.dtpDataNascimentoFuncionario.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dtpDataNascimentoFuncionario.Name = "dtpDataNascimentoFuncionario";
-            this.dtpDataNascimentoFuncionario.Size = new System.Drawing.Size(147, 21);
-            this.dtpDataNascimentoFuncionario.TabIndex = 90;
-            // 
-            // lblDataNasc
-            // 
-            this.lblDataNasc.AutoSize = true;
-            this.lblDataNasc.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDataNasc.Location = new System.Drawing.Point(22, 229);
-            this.lblDataNasc.Name = "lblDataNasc";
-            this.lblDataNasc.Size = new System.Drawing.Size(178, 21);
-            this.lblDataNasc.TabIndex = 91;
-            this.lblDataNasc.Text = "Data de Nascimento:";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(26, 253);
-            this.dateTimePicker1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(147, 21);
-            this.dateTimePicker1.TabIndex = 92;
-            // 
-            // lblTelefone
-            // 
-            this.lblTelefone.AutoSize = true;
-            this.lblTelefone.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefone.Location = new System.Drawing.Point(153, 292);
-            this.lblTelefone.Name = "lblTelefone";
-            this.lblTelefone.Size = new System.Drawing.Size(80, 21);
-            this.lblTelefone.TabIndex = 93;
-            this.lblTelefone.Text = "Telefone:";
-            // 
-            // mskTelefoneCliente
-            // 
-            this.mskTelefoneCliente.Location = new System.Drawing.Point(157, 316);
-            this.mskTelefoneCliente.Mask = "(99) 99999-9999";
-            this.mskTelefoneCliente.Name = "mskTelefoneCliente";
-            this.mskTelefoneCliente.Size = new System.Drawing.Size(147, 21);
-            this.mskTelefoneCliente.TabIndex = 94;
-            // 
-            // lblEndereco
-            // 
-            this.lblEndereco.AutoSize = true;
-            this.lblEndereco.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEndereco.Location = new System.Drawing.Point(247, 37);
-            this.lblEndereco.Name = "lblEndereco";
-            this.lblEndereco.Size = new System.Drawing.Size(89, 21);
-            this.lblEndereco.TabIndex = 95;
-            this.lblEndereco.Text = "Endereço:";
-            // 
-            // txtEnderecoCliente
-            // 
-            this.txtEnderecoCliente.Location = new System.Drawing.Point(251, 61);
-            this.txtEnderecoCliente.Name = "txtEnderecoCliente";
-            this.txtEnderecoCliente.Size = new System.Drawing.Size(160, 21);
-            this.txtEnderecoCliente.TabIndex = 96;
-            // 
-            // lblBairro
-            // 
-            this.lblBairro.AutoSize = true;
-            this.lblBairro.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBairro.Location = new System.Drawing.Point(247, 85);
-            this.lblBairro.Name = "lblBairro";
-            this.lblBairro.Size = new System.Drawing.Size(57, 21);
-            this.lblBairro.TabIndex = 97;
-            this.lblBairro.Text = "Bairro:";
-            // 
-            // txtBairroCliente
-            // 
-            this.txtBairroCliente.Location = new System.Drawing.Point(267, 200);
-            this.txtBairroCliente.Name = "txtBairroCliente";
-            this.txtBairroCliente.Size = new System.Drawing.Size(160, 20);
-            this.txtBairroCliente.TabIndex = 98;
-            // 
-            // lblCidade
-            // 
-            this.lblCidade.AutoSize = true;
-            this.lblCidade.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCidade.Location = new System.Drawing.Point(247, 133);
-            this.lblCidade.Name = "lblCidade";
-            this.lblCidade.Size = new System.Drawing.Size(73, 21);
-            this.lblCidade.TabIndex = 98;
-            this.lblCidade.Text = "Cidade:";
-            // 
-            // txtCidadeCliente
-            // 
-            this.txtCidadeCliente.Location = new System.Drawing.Point(267, 248);
-            this.txtCidadeCliente.Name = "txtCidadeCliente";
-            this.txtCidadeCliente.Size = new System.Drawing.Size(160, 20);
-            this.txtCidadeCliente.TabIndex = 99;
-            // 
-            // lblEstado
-            // 
-            this.lblEstado.AutoSize = true;
-            this.lblEstado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstado.Location = new System.Drawing.Point(252, 181);
-            this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(68, 21);
-            this.lblEstado.TabIndex = 99;
-            this.lblEstado.Text = "Estado:";
+            this.lblPais.AutoSize = true;
+            this.lblPais.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPais.Location = new System.Drawing.Point(252, 229);
+            this.lblPais.Name = "lblPais";
+            this.lblPais.Size = new System.Drawing.Size(43, 21);
+            this.lblPais.TabIndex = 101;
+            this.lblPais.Text = "País:";
             // 
             // cboEstadoCliente
             // 
@@ -349,22 +195,176 @@
             this.cboEstadoCliente.Size = new System.Drawing.Size(160, 24);
             this.cboEstadoCliente.TabIndex = 100;
             // 
-            // lblPais
+            // lblEstado
             // 
-            this.lblPais.AutoSize = true;
-            this.lblPais.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPais.Location = new System.Drawing.Point(252, 229);
-            this.lblPais.Name = "lblPais";
-            this.lblPais.Size = new System.Drawing.Size(43, 21);
-            this.lblPais.TabIndex = 101;
-            this.lblPais.Text = "País:";
+            this.lblEstado.AutoSize = true;
+            this.lblEstado.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstado.Location = new System.Drawing.Point(252, 181);
+            this.lblEstado.Name = "lblEstado";
+            this.lblEstado.Size = new System.Drawing.Size(68, 21);
+            this.lblEstado.TabIndex = 99;
+            this.lblEstado.Text = "Estado:";
             // 
-            // txtPaisCliente
+            // lblCidade
             // 
-            this.txtPaisCliente.Location = new System.Drawing.Point(251, 254);
-            this.txtPaisCliente.Name = "txtPaisCliente";
-            this.txtPaisCliente.Size = new System.Drawing.Size(160, 21);
-            this.txtPaisCliente.TabIndex = 102;
+            this.lblCidade.AutoSize = true;
+            this.lblCidade.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCidade.Location = new System.Drawing.Point(247, 133);
+            this.lblCidade.Name = "lblCidade";
+            this.lblCidade.Size = new System.Drawing.Size(73, 21);
+            this.lblCidade.TabIndex = 98;
+            this.lblCidade.Text = "Cidade:";
+            // 
+            // lblBairro
+            // 
+            this.lblBairro.AutoSize = true;
+            this.lblBairro.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBairro.Location = new System.Drawing.Point(247, 85);
+            this.lblBairro.Name = "lblBairro";
+            this.lblBairro.Size = new System.Drawing.Size(57, 21);
+            this.lblBairro.TabIndex = 97;
+            this.lblBairro.Text = "Bairro:";
+            // 
+            // txtEnderecoCliente
+            // 
+            this.txtEnderecoCliente.Location = new System.Drawing.Point(251, 61);
+            this.txtEnderecoCliente.Name = "txtEnderecoCliente";
+            this.txtEnderecoCliente.Size = new System.Drawing.Size(160, 21);
+            this.txtEnderecoCliente.TabIndex = 96;
+            // 
+            // lblEndereco
+            // 
+            this.lblEndereco.AutoSize = true;
+            this.lblEndereco.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEndereco.Location = new System.Drawing.Point(247, 37);
+            this.lblEndereco.Name = "lblEndereco";
+            this.lblEndereco.Size = new System.Drawing.Size(89, 21);
+            this.lblEndereco.TabIndex = 95;
+            this.lblEndereco.Text = "Endereço:";
+            // 
+            // mskTelefoneCliente
+            // 
+            this.mskTelefoneCliente.Location = new System.Drawing.Point(157, 316);
+            this.mskTelefoneCliente.Mask = "(99) 99999-9999";
+            this.mskTelefoneCliente.Name = "mskTelefoneCliente";
+            this.mskTelefoneCliente.Size = new System.Drawing.Size(147, 21);
+            this.mskTelefoneCliente.TabIndex = 94;
+            // 
+            // lblTelefone
+            // 
+            this.lblTelefone.AutoSize = true;
+            this.lblTelefone.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefone.Location = new System.Drawing.Point(153, 292);
+            this.lblTelefone.Name = "lblTelefone";
+            this.lblTelefone.Size = new System.Drawing.Size(80, 21);
+            this.lblTelefone.TabIndex = 93;
+            this.lblTelefone.Text = "Telefone:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "yyyy-MM-dd";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(26, 253);
+            this.dateTimePicker1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(147, 21);
+            this.dateTimePicker1.TabIndex = 92;
+            // 
+            // lblDataNasc
+            // 
+            this.lblDataNasc.AutoSize = true;
+            this.lblDataNasc.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataNasc.Location = new System.Drawing.Point(22, 229);
+            this.lblDataNasc.Name = "lblDataNasc";
+            this.lblDataNasc.Size = new System.Drawing.Size(178, 21);
+            this.lblDataNasc.TabIndex = 91;
+            this.lblDataNasc.Text = "Data de Nascimento:";
+            // 
+            // dtpDataNascimentoFuncionario
+            // 
+            this.dtpDataNascimentoFuncionario.CustomFormat = "yyyy-MM-dd";
+            this.dtpDataNascimentoFuncionario.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDataNascimentoFuncionario.Location = new System.Drawing.Point(26, 205);
+            this.dtpDataNascimentoFuncionario.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.dtpDataNascimentoFuncionario.Name = "dtpDataNascimentoFuncionario";
+            this.dtpDataNascimentoFuncionario.Size = new System.Drawing.Size(147, 21);
+            this.dtpDataNascimentoFuncionario.TabIndex = 90;
+            // 
+            // lblDataCadastro
+            // 
+            this.lblDataCadastro.AutoSize = true;
+            this.lblDataCadastro.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataCadastro.Location = new System.Drawing.Point(22, 181);
+            this.lblDataCadastro.Name = "lblDataCadastro";
+            this.lblDataCadastro.Size = new System.Drawing.Size(211, 21);
+            this.lblDataCadastro.TabIndex = 89;
+            this.lblDataCadastro.Text = "Data do Cadastramento:";
+            // 
+            // txtEmailCliente
+            // 
+            this.txtEmailCliente.Location = new System.Drawing.Point(26, 157);
+            this.txtEmailCliente.Name = "txtEmailCliente";
+            this.txtEmailCliente.Size = new System.Drawing.Size(147, 21);
+            this.txtEmailCliente.TabIndex = 88;
+            // 
+            // lblEmail
+            // 
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Location = new System.Drawing.Point(22, 133);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(55, 21);
+            this.lblEmail.TabIndex = 87;
+            this.lblEmail.Text = "Email:";
+            // 
+            // mskRGCliente
+            // 
+            this.mskRGCliente.Location = new System.Drawing.Point(26, 109);
+            this.mskRGCliente.Mask = "Aa-99.999.999";
+            this.mskRGCliente.Name = "mskRGCliente";
+            this.mskRGCliente.Size = new System.Drawing.Size(147, 21);
+            this.mskRGCliente.TabIndex = 86;
+            // 
+            // lblRG
+            // 
+            this.lblRG.AutoSize = true;
+            this.lblRG.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRG.Location = new System.Drawing.Point(22, 85);
+            this.lblRG.Name = "lblRG";
+            this.lblRG.Size = new System.Drawing.Size(38, 21);
+            this.lblRG.TabIndex = 85;
+            this.lblRG.Text = "RG:";
+            // 
+            // txtNomeCliente
+            // 
+            this.txtNomeCliente.Location = new System.Drawing.Point(26, 61);
+            this.txtNomeCliente.Name = "txtNomeCliente";
+            this.txtNomeCliente.Size = new System.Drawing.Size(147, 21);
+            this.txtNomeCliente.TabIndex = 84;
+            // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(22, 37);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(61, 21);
+            this.lblNome.TabIndex = 83;
+            this.lblNome.Text = "Nome:";
+            // 
+            // txtBairroCliente
+            // 
+            this.txtBairroCliente.Location = new System.Drawing.Point(267, 200);
+            this.txtBairroCliente.Name = "txtBairroCliente";
+            this.txtBairroCliente.Size = new System.Drawing.Size(160, 20);
+            this.txtBairroCliente.TabIndex = 98;
+            // 
+            // txtCidadeCliente
+            // 
+            this.txtCidadeCliente.Location = new System.Drawing.Point(267, 248);
+            this.txtCidadeCliente.Name = "txtCidadeCliente";
+            this.txtCidadeCliente.Size = new System.Drawing.Size(160, 20);
+            this.txtCidadeCliente.TabIndex = 99;
             // 
             // BtnShowExcluir
             // 
