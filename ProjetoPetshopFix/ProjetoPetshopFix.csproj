@@ -72,6 +72,12 @@
     <Compile Include="EditarFuncionario.Designer.cs">
       <DependentUpon>EditarFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditarServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarServico.Designer.cs">
+      <DependentUpon>EditarServico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Entities\Animal.cs" />
     <Compile Include="Entities\Cliente.cs" />
     <Compile Include="Entities\Enum\TipoFuncionario.cs" />
@@ -88,6 +94,12 @@
     <Compile Include="ExcluirFuncionario.Designer.cs">
       <DependentUpon>ExcluirFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExcluirServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExcluirServico.Designer.cs">
+      <DependentUpon>ExcluirServico.cs</DependentUpon>
+    </Compile>
     <Compile Include="InserirCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +111,12 @@
     </Compile>
     <Compile Include="InserirFuncionario.designer.cs">
       <DependentUpon>InserirFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InserirServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InserirServico.Designer.cs">
+      <DependentUpon>InserirServico.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -129,17 +147,26 @@
     <EmbeddedResource Include="EditarFuncionario.resx">
       <DependentUpon>EditarFuncionario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditarServico.resx">
+      <DependentUpon>EditarServico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ExcluirCliente.resx">
       <DependentUpon>ExcluirCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExcluirFuncionario.resx">
       <DependentUpon>ExcluirFuncionario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ExcluirServico.resx">
+      <DependentUpon>ExcluirServico.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InserirCliente.resx">
       <DependentUpon>InserirCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InserirFuncionario.resx">
       <DependentUpon>InserirFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InserirServico.resx">
+      <DependentUpon>InserirServico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

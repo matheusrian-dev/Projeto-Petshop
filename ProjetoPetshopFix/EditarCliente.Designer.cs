@@ -43,6 +43,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtBuscaRGFuncionarioExcluir = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtCidadeCliente = new System.Windows.Forms.TextBox();
+            this.txtBairroCliente = new System.Windows.Forms.TextBox();
             this.txtPaisCliente = new System.Windows.Forms.TextBox();
             this.lblPais = new System.Windows.Forms.Label();
             this.cboEstadoCliente = new System.Windows.Forms.ComboBox();
@@ -63,8 +65,6 @@
             this.lblRG = new System.Windows.Forms.Label();
             this.txtNomeCliente = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
-            this.txtBairroCliente = new System.Windows.Forms.TextBox();
-            this.txtCidadeCliente = new System.Windows.Forms.TextBox();
             this.pnlTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -102,9 +102,9 @@
             this.label1.ForeColor = System.Drawing.Color.Gainsboro;
             this.label1.Location = new System.Drawing.Point(359, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(536, 31);
+            this.label1.Size = new System.Drawing.Size(479, 31);
             this.label1.TabIndex = 30;
-            this.label1.Text = "Gerenciamento de Dados dos Funcionários";
+            this.label1.Text = "Gerenciamento de Dados dos Clientes";
             // 
             // label6
             // 
@@ -239,6 +239,20 @@
             this.groupBox1.TabIndex = 114;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dados do Cliente";
+            // 
+            // txtCidadeCliente
+            // 
+            this.txtCidadeCliente.Location = new System.Drawing.Point(251, 157);
+            this.txtCidadeCliente.Name = "txtCidadeCliente";
+            this.txtCidadeCliente.Size = new System.Drawing.Size(160, 21);
+            this.txtCidadeCliente.TabIndex = 104;
+            // 
+            // txtBairroCliente
+            // 
+            this.txtBairroCliente.Location = new System.Drawing.Point(251, 109);
+            this.txtBairroCliente.Name = "txtBairroCliente";
+            this.txtBairroCliente.Size = new System.Drawing.Size(160, 21);
+            this.txtBairroCliente.TabIndex = 103;
             // 
             // txtPaisCliente
             // 
@@ -450,20 +464,6 @@
             this.lblNome.Size = new System.Drawing.Size(61, 21);
             this.lblNome.TabIndex = 83;
             this.lblNome.Text = "Nome:";
-            // 
-            // txtBairroCliente
-            // 
-            this.txtBairroCliente.Location = new System.Drawing.Point(251, 109);
-            this.txtBairroCliente.Name = "txtBairroCliente";
-            this.txtBairroCliente.Size = new System.Drawing.Size(160, 21);
-            this.txtBairroCliente.TabIndex = 103;
-            // 
-            // txtCidadeCliente
-            // 
-            this.txtCidadeCliente.Location = new System.Drawing.Point(251, 157);
-            this.txtCidadeCliente.Name = "txtCidadeCliente";
-            this.txtCidadeCliente.Size = new System.Drawing.Size(160, 21);
-            this.txtCidadeCliente.TabIndex = 104;
             // 
             // EditarCliente
             // 
